@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer Page</title>
+    <style>
+
+        form{
+            border: 1px solid black;
+            padding: 24px;
+       }
+       div{
+           padding: 15px;
+       }
+       span{
+         position: absolute;
+         right: 5%;
+       }
+       #ProductShow{
+           padding: 24px;
+       }
+     
+       .Margin{
+         margin: 10px;
+       }
+     
+       </style>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+<body>
+    
+    <h1 style="text-align: center;">Welcome To Our Ecommerce 
+    <span>
+      <button id="goToCart" class="btn btn-info">Go To Cart</button>
+    </span>
+    </h1>
+   <div id="ProductShow" class="row container"></div>
+   
+   <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+            <label for="productName" class="form-label col">Product Name</label>
+            <input style="background-color: white;" type="text" name="productName" id="productName" readonly=true class="form-control col">
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="productDescription" class="form-label col">Product Description</label>
+            <input style="background-color: white;" type="text" name="productDescription" id="productDescription" readonly=true class="form-control col">
+            <label for="productPrice" class="form-label col">Product Price</label>
+            <input style="background-color: white;" type="text" name="productPrice" id="productPrice" readonly=true class="form-control col">
+            <label for="productQuantity" class="form-label col">Product Quantinty</label>
+            <input style="background-color: white;" type="text" name="productQuantity" id="productQuantity" readonly=true class="form-control col">
+         
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="customer.js"></script>
+
+</body>
+</html>

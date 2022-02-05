@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Cart Page</title>
+    
+   <style>
+
+  
+   div{
+       padding: 15px;
+   }
+  
+   #ProductShow{
+       padding: 24px;
+   }
+ 
+   .Margin{
+     margin: 10px;
+   }
+ 
+   </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+  
+    
+    <h1 style="text-align: center;">Welcome To Cart</h1>
+    <div id="ProductShow" class="row container"></div>
+    <div class="container">
+        <button id="placeOrder" class="btn btn-success"data-bs-toggle="modal" data-bs-target="#exampleModal">Place Order</button>
+    </div>
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h1>Transaction Complete</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <h2>Thanks For Shoping with Us... </h2>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

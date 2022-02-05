@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Page</title>
+    <style>
+
+        form{
+            border: 1px solid black;
+            padding: 24px;
+       }
+       div{
+           padding: 15px;
+       }
+       #ProductShow{
+           padding: 24px;
+       }
+     .Margin{
+         margin: 10px;
+     }
+       </style>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+<body>
+    
+    <h1 style="text-align: center;">Welcome Admin</h1>
+    <form   id="ProductForm" class="container">
+    <div class="row">
+        <label for="ProductName" class="form-label col Margin">Product Name</label>
+        <input required type="text" class="form-control col Margin" name="ProductName" id="ProductName" placeholder="Product Name">    
+    </div>
+    <div class="row">
+        <label for="ProductDescription" class="form-label col Margin">Product Description</label>
+        <input required type="text" class="form-control col Margin" name="ProductDescription" id="ProductDescription" placeholder="Product Description">
+    </div>
+    <div class="row">
+        <label for="ProductPrice" class="form-label col Margin">Product Price</label>
+        <input required type="number" class="form-control col Margin" name="ProductPrice" id="ProductPrice" placeholder="Product Price">    
+    </div>
+    <div class="row">
+        <label for="ProductQuantity" class="form-label col Margin">Product Quantity</label>
+        <input required type="number" class="form-control col Margin" name="ProductQuantity" id="ProductQuantity" placeholder="Product Quantity">
+    </div>
+    
+    <input  class="btn btn-primary Margin" id="submit"type="submit" value="Add Product">
+    </form>
+    <div id="rongInput" class=" Margin"></div>
+    <div id="ProductShow" class="row container Margin"></div>
+   
+      <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+            <label for="productName" class="form-label col Margin">Product Name</label>
+            <input style="background-color: white;" type="text" name="productName" id="productName" class="form-control col Margin">
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="productDescription" class="form-label col Margin">Product Description</label>
+            <input style="background-color: white;" type="text" name="productDescription" id="productDescription" class="form-control col Margin">
+            <label for="productPrice" class="form-label col Margin">Product Price</label>
+            <input style="background-color: white;" type="text" name="productPrice" id="productPrice" class="form-control col Margin">
+            <label for="productQuantity" class="form-label col Margin">Product Quantinty</label>
+            <input style="background-color: white;" type="text" name="productQuantity" id="productQuantity" class="form-control col Margin">
+        </div>
+        <div class="modal-footer">
+           <button id="updated" class="btn btn-info Margin" name="">Complet Update</button>
+           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+        
+      </div>
+    </div>
+  </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="admin.js"></script>
+
+</body>
+</html>
